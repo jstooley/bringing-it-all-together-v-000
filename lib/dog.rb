@@ -73,6 +73,7 @@ class Dog
       new_dog
     else
       old_dog = self.new_from_db(dog[0])
+      old_dog
   end
 
 end
