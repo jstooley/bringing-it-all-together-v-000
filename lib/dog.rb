@@ -53,4 +53,7 @@ class Dog
     dog.save
     dog
   end
+
+  def find_by_id
+  end
 end
