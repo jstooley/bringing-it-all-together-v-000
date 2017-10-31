@@ -31,6 +31,10 @@ class Dog
     new_dog
   end
 
-  def save 
+  def save
+    if self.id
+      self.update
+    else 
+    end
   end
 end
