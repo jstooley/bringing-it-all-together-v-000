@@ -88,7 +88,7 @@ class Dog
 
   def update
     sql = <<-SQL
-    UPDATE dogs (name, breed)
+    UPDATE dogs (name, breed) VALUES (?, ?)
     SQL
   end
 
