@@ -54,6 +54,6 @@ class Dog
     dog
   end
 
-  def find_by_id
+  def find_by_id(id)
   end
 end
