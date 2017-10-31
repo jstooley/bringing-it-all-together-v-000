@@ -44,7 +44,7 @@ class Dog
       DB[:conn].execute(sql,self.name,self.breed)
       @id = DB[:conn].execute('SELECT lastinsertrowid() FROM dogs'[0][0])
     end
-    
+
     self
   end
 end
