@@ -86,6 +86,7 @@ class Dog
     end.first
   end
 
-  def updateend
+  def update
+  end
 
 end
