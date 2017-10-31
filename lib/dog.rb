@@ -68,6 +68,10 @@ class Dog
     SELECT * FROM dogs WHERE name = ? AND breed = ?
     SQL
     dog = DB[:conn].execute(sql, name, breed)
+    if dog.empty?
+      new_dog = self.create(name,breed)
+      new_dog
+    else
   end
 
 end
