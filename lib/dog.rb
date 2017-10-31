@@ -34,7 +34,7 @@ class Dog
   def save
     if self.id
       self.update
-    else 
+    else
       sql = <<-SQL
       SQL
     end
