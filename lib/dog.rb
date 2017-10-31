@@ -42,7 +42,7 @@ class Dog
         VALUES (?, ?)
       SQL
       DB[:conn].execute(sql, self.name, self.breed)
-      @id = DB[:conn].execute('SELECT lastinsertrowid() FROM dogs'[0][0])
+      @id = DB[:conn].execute('SELECT lastinsertrowid() FROM dogs')[0][0]
     end
 
     self
